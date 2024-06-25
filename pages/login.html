@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon/bx-football.svg" type="image/x-icon">
+    
+    <title>Login</title>
+</head>
+<body>
+    <div class="root" id="root">
+        <div class="header" id="header">
+            <div class="logo">
+                <img src="../img/icon/soccer-306925 copy.svg" alt="logo">
+                <h2>
+                    <em>¿Fulbito o que?</em>
+                </h2>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <img src="../img/icon/house.svg" alt="">
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="hamburguesa" id="hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="formularios">
+            <form action="" class="form form-1" id="formLogin">
+                <div class="row img"><img src="../img/icon/person-bounding-box.svg" alt="user"></div>
+                <div class="row">
+                    <label for="username">Nombre de usuario</label>
+                    <input type="text" name="username" id="username" placeholder="Usuario aquí" required>
+                </div>
+                <div class="row">
+                    <label for="password">Contraseña de usuario</label>
+                    <input type="password" name="password" id="password" placeholder="Contraseña aquí" required>
+                </div>
+                <div class="row"><input type="submit" value="Entrar" class="submit"></div>
+                <div class="row enlaces">
+                    <a href="#" onclick="openForm('formLogin','formSingUp')">¿No tienes cuenta?</a>
+                    <a href="">¿Olvidó la contraseña?</a>
+                </div>
+            </form>
+            <form action="" class="form form-2" id="formSingUp">
+                <div class="row">
+                    <h2>Formulario de registro</h2>
+                </div>
+                <div class="row">
+                    <label for="nombres">Nombres</label>
+                    <input type="text" name="nombres" id="nombres" placeholder="Usuario aquí" required>
+                </div>
+                <div class="row">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Contraseña aquí" required>
+                </div>
+                <div class="row">
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" name="correo" id="correo" placeholder="Contraseña aquí" required>
+                </div>
+                <div class="row">
+                    <label for="telefono">Número de telefono</label>
+                    <input type="number" name="telefono" id="telefono" placeholder="Contraseña aquí" required>
+                </div>
+                <div class="row">
+                    <label for="contrasenhia">Ingrese una contraseña</label>
+                    <input type="password" name="contrasenhia" id="contrasenhia" placeholder="Contraseña aquí" required>
+                </div>
+                <div class="row">
+                    <label for="repetirContrasenhia">Repita la contraseña</label>
+                    <input type="password" name="repetirContrasenhia" id="repetirContrasenhia" placeholder="Contraseña aquí" required>
+                </div>
+                <div class="row"><input type="submit" value="Entrar" class="submit"></div>
+                <div class="row enlaces">
+                    <a href="#" onclick="openForm('formSingUp','formLogin')">¿Ya tienes cuenta?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer" id="footer">
+        <div class="red-social">
+            <h2>¿Fulbito o que?</h2>
+            <div class="social">
+                <a href="">
+                    <span>Facebook</span>
+                    <img src="../img/icon/facebook.svg" alt="Facebook">
+                </a>
+                <a href="">
+                    <span>Whatsapp</span>
+                    <img src="../img/icon/whatsapp.svg" alt="Whatsapp">
+                </a>
+                <a href="">
+                    <span>Instagram</span>
+                    <img src="../img/icon/instagram.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+        <div class="enlaces"></div>
+        <div class="copy">
+            <p>
+                Copyright &copy; 2024 <strong>¿Fulbito o que?</strong>
+            </p>
+            <p>Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="../js/login.js"></script>
+</body>
+</html>
